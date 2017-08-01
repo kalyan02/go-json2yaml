@@ -2,6 +2,6 @@ deployment:
   master:
     branch: master
     commands:
-    — go get github.com/tcnksm/ghr
-    — go build -o json2yaml
-    — ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` json2yaml
+      — go get github.com/tcnksm/ghr
+      — go build -o json2yaml
+      — ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` json2yaml
